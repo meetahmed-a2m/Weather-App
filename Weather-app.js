@@ -5,8 +5,8 @@
 function weatherFunction()
 {
 
-const cityInfoBox = document.querySelector("#cityname")
-const cityInfo = cityInfoBox.value;
+const cityInfo = document.querySelector("#cityname").value
+// const cityInfo = cityInfoBox.value;
 
 fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityInfo}&appid=771fa99984f7f60bcda45e1ae02c85c9&units=metric`)
 
